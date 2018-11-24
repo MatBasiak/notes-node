@@ -10,8 +10,8 @@ module.exports.addNote =()=>{
 
 }
 
-module.exports.add =(a,b)=>{
-    console.log(`a equals ${a} and b equals ${b}  sum equals ${a+b}`);
-    return a+b;
+// module.exports.add =(a,b)=>{
+//     console.log(`a equals ${a} and b equals ${b}  sum equals ${a+b}`);
+//     return a+b;
 
-}
+// }
