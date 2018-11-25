@@ -37,7 +37,8 @@ const yargs = require('yargs')
 const notes = require('./notes.js'); //require a file 
 
 const argv = yargs.argv
-const command = process.argv[2];
+// const command = process.argv[2]; 
+const command = argv._[0];
 console.log('Command:', command);
 // console.log('process:',process.argv);
 console.log("yargs :",argv);
