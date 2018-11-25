@@ -18,18 +18,18 @@
 
 const fs = require('fs');
 
-const originalNote={
-    title:'abrakadabra title node js',
-    body:'abrakadabra body'
+var originalNote = {
+    title: 'abrakadabra title node js',
+    body: 'abrakadabra body'
 };
 
-const originalNoteString = JSON.stringify(originalNote);
+const originalNoteString = JSON.stringify(originalNote); // convert from js object to json string
 
-fs.writeFileSync('notes.json',originalNoteString);
+fs.writeFileSync('notes.json', originalNoteString); //write to a file
 
-const noteString = fs.readFileSync('notes.json')
+var noteString = fs.readFileSync('notes.json') //read from file
 
-const note = JSON.parse(noteString);
+const note = JSON.parse(noteString); // convert from json file to a object
 
 console.log(typeof note);
 console.log(note.title);
