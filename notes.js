@@ -1,4 +1,4 @@
-console.log('starting notes.js');
+// console.log('starting notes.js');
 
 // console.log(module);
 
@@ -51,7 +51,8 @@ const addNote = (title, body) => {
 };
 
 const getAll = () => {
-    console.log('getting all notes');
+    // console.log('getting all notes');
+    return fetchNotes();
 }
 
 const removeNote = (title) => {
@@ -73,9 +74,11 @@ const getNote = (title) => {
 }
 
 const logNote = (note) => {
-        console.log('---');
-        console.log(`Title: ${note.title}`);
-        console.log(`Body: ${note.body}`);;
+    debugger;
+
+    console.log('---');
+    console.log(`Title: ${note.title}`);
+    console.log(`Body: ${note.body}`);;
 
 };
 
